@@ -4,8 +4,7 @@ ruby '2.1.1'
 
 gem 'sinatra', '1.4.4'
 gem 'rspec', '2.14.1'
-gem 'sinatra'
-gem 'rspec', '2.14.1'
-gem 'sqlite'
+gem 'sqlite3'
 
 gem 'unicorn'
+gem 'slim'

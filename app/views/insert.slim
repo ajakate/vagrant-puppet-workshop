@@ -1,19 +1,29 @@
-form role="form" action="/units" method="POST"
+p3 Please Enter the information and we would like to save it
+
+
+form role="form" action="/insert" method="POST"
+
+  br
 
   div.form-group
-    label for="vin" VIN
-    input.form-control type="text" name="vin" placeholder="123ABC87471948DF1"
+    label for="name" Enter your name:
+    br
+    input.form-control type="text" name="name" placeholder="John Doe" size=40
+
+  br
 
   div.form-group
-    label for="make" Make
-    input.form-control type="text" name="make" placeholder="Ford"
+    label for="fear" What is your greatest fear??
+    br
+    input.form-control type="text" name="fear" placeholder="e.g. Snakes, Death, Failure" size=40
+
+  br
 
   div.form-group  
-    label for="model" Model
-    input.form-control type="text" name="model" placeholder="Mustang"
+    label for="address" Now, please tell us your home address.
+    br
+    input.form-control type="text" name="address" placeholder="123 Fake St, Chicago IL Apt. 42" size=40
 
-  div.form-group
-    label for="year" Year
-    input.form-control type="text" name="year" placeholder="2003"
+  br
 
-  input.btn.btn-primary type="submit" value="Create Unit"
+  input.btn.btn-primary type="submit" value="Proceed" size=40

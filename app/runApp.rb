@@ -1,9 +1,24 @@
-require 'sinatra'
+# encoding: utf-8
+class RunApp < Sinatra::Base
 
-get '/' do
-  "Hello World!"
-end
+	#register Sinatra::AssetPack
 
-get '/insert into db' do
+	use Rack::Lint
+  	use Rack::Runtime
+
+	require 'sinatra'
+
+	get '/' do
+	  slim :index
+	end
+
+	get '/insert' do
+	  slim :insert
+	end
+
+	post '/insert' do
+	  slim :return
+	end
+
 
 end
